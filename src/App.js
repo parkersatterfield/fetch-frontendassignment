@@ -72,8 +72,6 @@ function App() {
       state: stateEl.current.value
     }
 
-    console.log(data)
-
     // submit form request
     const requestOptions = {
       method: 'POST',
@@ -84,10 +82,6 @@ function App() {
     const call = await fetch(url, requestOptions);
 
     // show results of request (success or error)
-    console.log(call.status);
-
-    console.log(call.status===201)
-
     if (call.status !== 201 && call.status !== 200) {
       setError('There was an issue submitting this form. Please try again.');
       return;
