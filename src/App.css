@@ -1,0 +1,41 @@
+.btn-secondary {
+    border-color: var(--secondary);
+    background-color: var(--secondary);
+}
+
+.form-control:focus {
+    border-color: var(--fade);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(231, 115, 7, 0.212);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.alert {
+    border-width: 1px;
+    border-radius: 6px;
+    font-size: small;
+    animation: fadeIn 0.3s;
+    transition: ease-in-out 0.35s;
+}
+
+.success {
+    border-color: rgba(0, 128, 0, 0.250);
+    background-color: rgba(0, 128, 0, 0.250);
+}
+
+.error {
+    border-color: rgba(255, 0, 0, 0.250);
+    background-color: rgba(255, 0, 0, 0.250);
+}
+
+label {
+    font-size: small;
+}
