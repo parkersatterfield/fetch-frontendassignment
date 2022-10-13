@@ -103,7 +103,7 @@ function App() {
         <div className="col-md">
           <form id="signUpForm" className="d-flex flex-column bg-white pt-3 pl-5 pr-5 pb-4 rounded shadow" onSubmit={handleSubmit}>
             <div>
-              <h2>Sign Up</h2>
+              <h4>Sign Up</h4>
               <hr></hr>
             </div>
 
@@ -127,7 +127,6 @@ function App() {
             <div className="form-group">
               <label>Email</label>
               <input type="email" className="form-control" id="emailInput" placeholder="Enter email" name="email" ref={emailEl}/>
-              <small className="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
 
             <div className="form-group">
